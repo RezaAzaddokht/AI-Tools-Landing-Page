@@ -2,6 +2,10 @@ import { useState, useEffect } from 'react';
 import { ArrowRight } from 'lucide-react';
 import { ImageSlider } from '../ui/ImageSlider';
 
+import chatbotImg from "../../assets/images/chatbot.jpg";
+import dataPlatformImg from "../../assets/images/data-platform.jpg";
+import dataHubImg from "../../assets/images/data-hub.png";
+
 export const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -12,20 +16,20 @@ export const Hero = () => {
   const sliderImages = [
     {
       id: 1,
-      title: 'Dataset Hub',
-      url: 'https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      title: 'Data Hub',
+      url: dataHubImg,
       description: 'Advanced datasets for training robust AI models'
     },
     {
       id: 2,
-      title: 'Computer Vision Platform',
-      url: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      title: 'Data Platform',
+      url: dataPlatformImg,
       description: 'State-of-the-art visual recognition technology'
     },
     {
       id: 3,
-      title: 'Customizable ChatBot',
-      url: 'https://images.pexels.com/photos/8386434/pexels-photo-8386434.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      title: 'ChatBot',
+      url: chatbotImg,
       description: 'Intelligent conversational AI for businesses'
     }
   ];
@@ -40,21 +44,21 @@ export const Hero = () => {
         <div id="particles" className="absolute inset-0 opacity-20"></div>
       </div>
 
-      <div className="container mx-auto px-4 md:px-6 relative z-10">
+      <div className="container mx-auto px-4 py-14 md:px-6 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
           {/* Text Content */}
           <div className={`space-y-8 transform transition-all duration-1000 ease-out ${
             isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'
           }`}>
             <div>
-              <h4 className="text-indigo-400 font-semibold mb-3">Next-Generation AI Solutions</h4>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
+              <h4 className="text-indigo-400 font-semibold mb-3">Next-Generation AI Tools</h4>
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
                 Transforming Industries Through <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-500">Intelligent Technology</span>
               </h1>
             </div>
             
             <p className="text-gray-300 text-lg leading-relaxed max-w-xl">
-              Ai Tools delivers cutting-edge artificial intelligence solutions that empower businesses to harness the full potential of computer vision, conversational AI, and data intelligence.
+              Ai Tools delivers cutting-edge artificial intelligence solutions that empower businesses to harness the full potential of Data Platforms, conversational AI, and data intelligence.
             </p>
             
             <div className="flex flex-wrap gap-4">
