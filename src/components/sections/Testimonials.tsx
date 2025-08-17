@@ -1,6 +1,10 @@
 import { useEffect, useRef, useState } from 'react';
 import { Star, ChevronLeft, ChevronRight, Quote } from 'lucide-react';
 
+import person1 from "../../assets/images/person1.jpeg";
+import person2 from "../../assets/images/person2.jpeg";
+import person3 from "../../assets/images/person3.jpeg";
+
 export const Testimonials = () => {
   const sectionRef = useRef<HTMLElement>(null);
   const [isVisible, setIsVisible] = useState(false);
@@ -36,7 +40,7 @@ export const Testimonials = () => {
       id: 1,
       name: "Sarah Johnson",
       position: "CTO, TechVision Inc.",
-      avatar: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      avatar: person1,
       content: "Implementing AI Tools' Computer Vision Platform transformed our manufacturing quality control process. We've seen a 35% reduction in defects and significantly improved production efficiency.",
       rating: 5
     },
@@ -44,7 +48,7 @@ export const Testimonials = () => {
       id: 2,
       name: "Michael Chen",
       position: "Head of Innovation, RetailMax",
-      avatar: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      avatar: person2,
       content: "The Customizable ChatBot solution has revolutionized our customer service. Our response times decreased by 80%, and customer satisfaction scores have increased by 40% since implementation.",
       rating: 5
     },
@@ -52,7 +56,7 @@ export const Testimonials = () => {
       id: 3,
       name: "Emily Rodriguez",
       position: "Research Director, HealthTech Solutions",
-      avatar: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      avatar: person3,
       content: "The Dataset Hub provided us with high-quality, diverse medical imaging data that accelerated our diagnostic AI development by months. The annotation quality is exceptional.",
       rating: 4
     }
