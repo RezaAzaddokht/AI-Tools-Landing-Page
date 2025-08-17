@@ -73,7 +73,7 @@ const NavLinks = () => (
       href="#dataset-hub"
       className="text-gray-300 hover:text-white transition-colors duration-200"
     >
-      Dataset Hub
+      Data Hub
     </a>
     <a
       href="#chatbot"
@@ -85,7 +85,7 @@ const NavLinks = () => (
       href="#vision"
       className="text-gray-300 hover:text-white transition-colors duration-200"
     >
-      Computer Vision
+      Data Platform
     </a>
     <a
       href="#contact"
@@ -110,7 +110,7 @@ const MobileNavLinks = ({ closeMenu }: { closeMenu: () => void }) => (
       className="text-gray-300 hover:text-white transition-colors duration-200 py-2"
       onClick={closeMenu}
     >
-      Dataset Hub
+      Data Hub
     </a>
     <a
       href="#chatbot"
@@ -124,7 +124,7 @@ const MobileNavLinks = ({ closeMenu }: { closeMenu: () => void }) => (
       className="text-gray-300 hover:text-white transition-colors duration-200 py-2"
       onClick={closeMenu}
     >
-      Computer Vision
+      Data Platform
     </a>
     <a
       href="#contact"

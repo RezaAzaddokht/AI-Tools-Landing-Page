@@ -1,4 +1,3 @@
-import React from 'react';
 import { Hero } from '../components/sections/Hero';
 import { DatasetHub } from '../components/sections/DatasetHub';
 import { ChatbotPlatform } from '../components/sections/ChatbotPlatform';
