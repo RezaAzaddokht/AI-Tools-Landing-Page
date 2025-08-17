@@ -81,8 +81,8 @@ export const DataCard: React.FC<DataCardProps> = ({ dataset, delay }) => {
         {dataset.annotations.map((annotation, index) => (
           <div
             key={index}
-            className={`absolute border-2 rounded-sm transition-all duration-500 ${
-              isHovered ? 'border-indigo-500 opacity-100' : 'border-transparent opacity-0'
+            className={`absolute border-4 rounded-sm transition-all duration-500 ${
+              isHovered ? 'border-red-500 opacity-100' : 'border-transparent opacity-0'
             }`}
             style={{
               left: `${annotation.x}%`,

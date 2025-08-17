@@ -4,7 +4,7 @@ import { HomePage } from './pages/HomePage';
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-950 text-gray-100 font-sans">
+    <div style={{ zoom: 0.75 }} className="min-h-screen bg-gray-950 text-gray-100 font-sans">
       <Header />
       <main>
         <HomePage />
