@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
 import { Play, Pause, Eye } from 'lucide-react';
 
+import poster from "../../assets/images/video-poster.jpeg";
+
 export const VideoSection = () => {
   const sectionRef = useRef<HTMLElement>(null);
   const [isActive, setIsActive] = useState(false);
@@ -73,7 +75,7 @@ export const VideoSection = () => {
             <video 
               ref={videoRef}
               className="w-full h-full object-cover"
-              poster="https://images.pexels.com/photos/8386434/pexels-photo-8386434.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              poster={poster}
               preload="metadata"
             >
               {/* Note: In production, add a real video source */}
